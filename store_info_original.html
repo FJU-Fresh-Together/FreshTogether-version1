@@ -21,16 +21,29 @@
     <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
     <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
+  
+    <style> 
+        textarea {
+          width: 100%;
+          height: 150px;
+          padding: 12px 20px;
+          box-sizing: border-box;
+          border: 2px solid #ccc;
+          border-radius: 4px;
+          background-color: #f8f8f8;
+          font-size: 16px;
+          resize: none;
+        }
+        </style>
 </head>
-
 <body>
-    <!-- Page Preloder -->
-    <div id="preloder">
+
+<div id="preloder">
         <div class="loader"></div>
     </div>
 
-    <!-- Humberger Begin -->
-    <div class="humberger__menu__overlay"></div>
+
+<div class="humberger__menu__overlay"></div>
     <div class="humberger__menu__wrapper">
         <div class="humberger__menu__logo">
             <a href="#"><img src="img/logo.png" alt=""></a>
@@ -86,10 +99,8 @@
             </ul>
         </div>
     </div>
-    <!-- Humberger End -->
 
-        <!-- 導覽列 -->
-        <div class="container">
+    <div class="container">
             <div class="row">
                 <div class="col-lg-3">
                     <div class="header__logo" >
@@ -126,7 +137,6 @@
                         </ul>
                     </nav>
                 </div>
-                
                 <div class="col-lg-3">
                     
                     <div class="header__cart">
@@ -148,20 +158,20 @@
                                         <i class="fa fa-user-circle-o" style="font-size:20px;color:rgb(0, 0, 0)"></i>
 
                                       </a>
-                                      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                      <!-- <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                         <a class="dropdown-item" href="#"><i class="fa fa-user">&nbsp;</i> 個人資料</i></a>
                                         <a class="dropdown-item" href="#"><i class="fa fa-search">&nbsp;</i>訂單查詢</a>
                                         <a class="dropdown-item" href="#"><i class="fa fa-heart">&nbsp;</i>我的最愛</a>
 
                                         <a class="dropdown-item" href="#"><i class="fa fa-toggle-on">&nbsp;</i>登出帳號</a>
-                                      </div>
-                                      <!-- <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                      </div> -->
+                                      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                         <a class="dropdown-item" href="#"><i class="fa fa-user"> &nbsp; </i>個人資料</a>
                                         <a class="dropdown-item" href="#"><i class="fa fa-list-ul">&nbsp;</i>賣場介紹</a>
                                         <a class="dropdown-item" href="#"><i class="fa fa-shopping-bag">&nbsp;</i>商品管理</a>
                                         <a class="dropdown-item" href="#"><i class="fa fa-toggle-on">&nbsp;</i>登出帳號</a>
                                         
-                                      </div> -->
+                                      </div>
                                     </li>   
                                   </ul>
                                 </div>
@@ -180,96 +190,118 @@
                 <i class="fa fa-bars"></i>
             </div>
         </div>
-        <!-- 導覽列END -->
+               <!-- 導覽列END -->
 
     <!-- Checkout Section Begin -->
     <section class="checkout spad">
         <div class="container">
 
             <div class="checkout__form">
-                <h4>使用者資訊</h4>
+                <h4>賣場介紹 </h4>
                 <form action="#">
                     <div class="row">
-                        <div class="col-lg-8 col-md-6">
-
-        
-
-                            <div class="checkout__input">
-                                <p>真實姓名：</p>
-                                <input type="text">                               
-                            </div>
-                           
-                            <div class="checkout__input">
-                                <p>身分證字號/統一證號/公司統編：</p>
-                                <input type="text">                               
-                            </div>
-
-                            <div class="checkout__input">
-                                <p>生日/公司核准設立日期：</p>
-                                <input type="text">                               
-                            </div>
-
-                            <div class="checkout__input">
-                                <p>戶籍地址/公司地址：</p>
-                                <input type="text">                               
-                            </div>
-
-                            <div class="checkout__input">
-                                <p>聯絡電話：</p>
-                                <input type="text">                               
-                            </div>
-
-                            <div class="checkout__input">
-                                <p>Email：</p>
-                                <input type="text">                               
-                            </div>
-            
-
-                            <button type="submit" class="site-btn">儲存變更</button>
-
-                        </div>
-
-                        
                         <div class="col-lg-4 col-md-6">
-                            <div class="checkout__order">
-                                <h4>頭貼編輯</h4>
-
-                                <div class="checkout__input">
-                                    <p>會員編號：1044555</p>
-                                </div>
+                           
+                                
+                        
+     
                                 <ul>
                                     <img data-imgbigurl="img/product/details/product-details-2.jpg"
-                                    src="img/userhead.png" width="400px" >
+                                    src="img/store.png" width="400px" >
                                     
-
+                        
                                 </br></br>
-                                <div class="checkout__order__products">
-                                    <!-- <a href="index.html"><u>變更密碼</u></a> -->
-                                    <input id="imgPicker" type="file" />
-                                    <img id="preview" />
+ 
+                        
+                                <!-- <button type="submit" class="site-btn">SAVE</button> -->
+                           
+                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+                        <div class="col-lg-8 col-md-6">
+                            <div class="checkout__input">
+                                <p>賣場名稱&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;開開心心生鮮鋪</p>                             
+                            </div>
+  
+                            <!-- <div class="checkout__input">
+                                <p>商品總數&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;總共有&nbsp;15&nbsp; 個商品品項&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>                                
+                            </div> -->
+                           
+                            <div class="checkout3__input">
+                                <p>賣場簡介&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;販賣各式各樣生鮮雜貨商品，歡迎選購</p>
+                               
+                            </div>
+                            
+        
+                            <div class="checkout3__input">
+                                <p>賣場星等&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5顆星/513評價&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=""><u>查看評價</u></a></p>
+                            </div>
+                            <br>
+                           <div>
+
+
+
+                            
+                             
+
+
+<br>
+<br>
+
+</div>
+  <input type ="button" class="site-btn" onclick="javascript:location.href='store_info-edit.html'" value="修改賣場資料"></input>
+
+</div>
+
+</div>
+</form>
+</div>
+</div>
+</section>
+<!-- <div class="col-lg-4 col-md-6">
+                            <div class="checkout__order">
+                                <h4>我的賣場</h4> -->
+                                <!-- <ul>
+                                    <img data-imgbigurl="img/product/details/product-details-2.jpg"
+                                    src="img/store.png" width="500px" height="200px">
                                     
-                                    <img id="demo"/>
-                                    <script>
-                                    document
-                                        .querySelector('#imgPicker')
-                                        .addEventListener('change', function(){
-                                            if(this.files.length === 0){
-                                                document.querySelector('#preview').src = '';
-                                                return;
-                                            }
-                                            
-                                            var reader = new FileReader();
-                                    
-                                            reader.onload = function (e) {
-                                                document.querySelector('#preview').src = e.target.result;
-                                            };
-                                    
-                                        reader.readAsDataURL(this.files[0]);
-                                        }, false);
-                                    </script>
+                                </ul> -->
+                                <!-- <div class="checkout__order__products">賣場名稱:&nbsp;&nbsp;開開心心生鮮鋪</div>
+                                <br>
+                                <div class="checkout__order__products">賣場簡介:&nbsp;&nbsp;<br>販賣各式各樣生鮮雜貨商品，歡迎選購</div>
+                                <br>
+                                <div class="checkout__order__products">賣場圖片:&nbsp;&nbsp;<br><img src="img/store.png"></div>
+                                <br>
+                                <div class="checkout__order__products">賣場星等:&nbsp;&nbsp;5顆星/513評價</div>
+                                <div class="checkout__order__products"><a href="index.html"><u>查看評價</u></a></div>
+                           
+
+                                <div class="checkout__order__total"></div>
+                                <div class="checkout__input__checkbox">
+                                    <label for="acc-or">
+                                        <input type="checkbox" id="acc-or">
+                                    </label>
                                 </div>
 
-                                <!-- <button type="submit" class="site-btn">SAVE</button> -->
+                            
+                                <div class="checkout__order__total"></div>
+                                <div class="checkout__input__checkbox">
+                                    <label for="acc-or">
+                                        <input type="checkbox" id="acc-or">
+                                    </label>
+                                </div>
+
+                                 <button type="submit" class="site-btn">SAVE</button> -->
                             </div>
                         </div>
                     </div>
@@ -277,9 +309,6 @@
             </div>
         </div>
     </section>
-    <!-- Checkout Section End -->
-
-    <!-- Footer Section Begin -->
     <footer class="footer spad">
         <div class="container">
             <div class="row">
@@ -345,9 +374,6 @@
             </div>
         </div>
     </footer>
-    <!-- Footer Section End -->
-
-    <!-- Js Plugins -->
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.nice-select.min.js"></script>
@@ -357,8 +383,5 @@
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
 
- 
-
 </body>
-
 </html>
