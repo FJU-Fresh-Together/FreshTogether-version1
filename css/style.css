@@ -2269,6 +2269,199 @@ ol {
 	margin-top: 10px;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+/*checkout1  */
+.checkout1__input {
+	margin-bottom: 24px;
+}
+
+.checkout1__input p {
+	color: #1c1c1c;
+	margin-bottom: 20px;
+}
+
+.checkout1__input p span {
+	color: #dd2222;
+}
+
+.checkout1__input input {
+	width: 62%;
+	height: 46px;
+	border: 1px solid #ebebeb;
+	padding-left: 20px;
+	font-size: 16px;
+	color: #b2b2b2;
+	border-radius: 4px;
+	margin-left: 45%; 
+	white-space: nowrap;
+	
+	
+}
+
+.checkout1__input input.checkout__input__add {
+	margin-bottom: 20px;
+	
+}
+
+.checkout1__input input::placeholder {
+	color: #b2b2b2;
+}
+
+.checkout1__input__checkbox {
+	margin-bottom: 10px;
+}
+
+.checkout1__input__checkbox label {
+	position: absolute;
+	font-size: 10px;
+	color: #1c1c1c;
+	padding-left: 50px;
+	cursor: pointer;
+}
+
+.checkout1__input__checkbox label input {
+	position: absolute;
+	visibility: hidden;
+}
+
+.checkout1__input__checkbox label input:checked~.checkmark {
+	background: #7fad39;
+	border-color: #7fad39;
+}
+
+.checkout1__input__checkbox label input:checked~.checkmark:after {
+	opacity: 1;
+}
+
+.checkout1__input__checkbox label .checkmark {
+	position: absolute;
+	left: 0;
+	top: 4px;
+	height: 16px;
+	width: 14px;
+	border: 1px solid #a6a6a6;
+	content: "";
+	border-radius: 4px;
+}
+
+.checkout1__input__checkbox label .checkmark:after {
+	position: absolute;
+	left: 15px;
+	top: 1px;
+	width: 10px;
+	height: 8px;
+	border: solid white;
+	border-width: 3px 3px 0px 0px;
+	-webkit-transform: rotate(127deg);
+	-ms-transform: rotate(127deg);
+	transform: rotate(127deg);
+	content: "";
+	opacity: 0;
+}
+
+/* user table */
+.user{
+	margin-left: 213px; 
+	width=100%;
+	height=100%;
+}
+
+
+
+/* checkout2 */
+
+
+.checkout2__input {
+	margin-bottom: 24px;
+}
+
+.checkout2__input p {
+	color: #1c1c1c;
+	margin-bottom: 20px;
+}
+
+.checkout2__input p span {
+	color: #dd2222;
+}
+
+.checkout2__input input {
+
+	font-size: 16px;
+	color: #8C8C8C;
+	border-radius: 4px;
+}
+
+.checkout2__input input.checkout__input__add {
+	margin-bottom: 20px;
+}
+
+
+
+/* checkout3 */
+.checkout3__input {
+	margin-bottom: 24px;
+}
+
+.checkout3__input p {
+	color: #1c1c1c;
+	margin-bottom: 20px;
+}
+
+.checkout3__input p span {
+	color: #dd2222;
+}
+
+.checkout3__input input {
+	width: 100%;
+	height: 1000px;
+	border: 1px solid #ebebeb;
+	padding-left: 20px;
+	font-size: 16px;
+	color: #b2b2b2;
+	border-radius: 4px;
+}
+
+.checkout3__input input.checkout__input__add {
+	margin-bottom: 20px;
+}
+
+.checkout3__input input::placeholder {
+	color: #b2b2b2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*---------------------
   Blog
 -----------------------*/
