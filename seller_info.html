@@ -206,40 +206,42 @@
                                 <ul>
                                     <img data-imgbigurl="img/product/details/product-details-2.jpg"
                                     src="img/userhead.png" width="400px" ><br><br>
-                                    <a>使用者權限：買家</a><br>
-                                    <a>使用者帳號：666333</a>
+                                    <a>使用者權限：賣家</a><br>
+                                    <a>使用者帳號：777888</a>
 
                         </div>
 
                         <div class="col-lg-8 col-md-6">
                             <div class="checkout__input">
                                 <b>真實姓名：</b>
-                                <a type="text">羅筱瑜</a>                            
+                                <a type="text">OOO</a>                            
                             </div>
                            
                             <div class="checkout__input">
-                                <b>身分證字號：</b>
-                                <a type="text">F505666333</a>                            
+                                <b>身分證字號/統一證號/公司統編：</b>
+                                <a type="text">F666555999</a>                                 
                             </div>
 
                             <div class="checkout__input">
-                                <b>生日：</b>
-                                <a type="text">2001/07/28</a>                            
+                                <b>生日/公司核准設立日期：</b>
+                                <a type="text">90/07/28</a>    
+                              
                             </div>
 
                             <div class="checkout__input">
-                                <b>常用地址：</b>
-                                <a type="text">新北市板橋區XX路XX段X巷55號</a>                            
+                                <b>戶籍地址/公司地址：</b>
+                                <a type="text">OOO市XX區AA路4段7巷99號</a>                               
                             </div>
 
                             <div class="checkout__input">
                                 <b>聯絡電話：</b>
-                                <a type="text">0966XXXXXX</a>                            
+                                <a type="text">0988555666</a>                                
                             </div>
 
                             <div class="checkout__input">
                                 <b>Email：</b>
-                                <a type="text">111@gmail.com</a>                            
+                                <a type="text">AAFFF@gmail.com</a>    
+                            
                             </div>
                         </div>
 
@@ -256,14 +258,14 @@
   <input type ="button" class="site-btn" onclick="javascript:location.href='store_info-edit.html'" value="修改使用者資訊"></input>
   <input type ="button" class="site-btn prompttest" onclick="javascript:location.href='password_confirm.html'" value="修改密碼"></input>
 
-  <p class='show'></p>
+  <!-- <p class='show'></p> -->
   
   <script>
       var button = document.querySelector('.prompttest');
       var showtxt = document.querySelector('.show');
   
       function popup3(e) {
-          var guest = window.prompt('您好!請輸入您的密碼以利驗證身分', '');
+          var guest = window.prompt('請輸入您的密碼以利驗證身分', '');
           if (guest == null || "") {
               showtxt.innerHTML = '您已取消輸入'
           } else {
