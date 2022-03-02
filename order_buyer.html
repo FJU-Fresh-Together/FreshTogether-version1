@@ -182,7 +182,15 @@
 
     <!-- Featured Section End -->
 
+        
+    <script>
+        function myFunc(){
+            // location.assign("index.html");
+            location.assign("");
+            // 這裡是跳轉頁面的script，下面表格裡面的tr可以加「onclick="myFunc()"」就直接跳轉到想要的頁面
 
+        }
+    </script>
    <!-- Shoping Cart Section Begin -->
     <div class="container">
         
@@ -190,7 +198,7 @@
 <!-- 01 -->
             <div class="shoping__cart__table tab-pane fade active show" id="aaa">
 
-                <table >
+                <table>
                     <thead>
                         <tr>
                             <th class="shoping__product">訂單編號</th>
@@ -200,11 +208,11 @@
                             <th></th>
                         </tr>
                     </thead>
-                    
+   
                     <tbody >
+                        <tr onclick="myFunc()"> 
 
-                        <tr>
-                            <td class="shoping__cart__item">
+                            <td class="shoping__cart__item" id="c12">
                                 <h5>123123</h5>
                             </td>
                             <td class="shoping__cart__price">

@@ -3670,3 +3670,60 @@ ol {
 		font-size: 24px;
 	}
 }
+
+/* 下面是星星評價功能的the 抄 */
+.star-container {
+	display: flex;
+	width: 350px;
+	flex-direction: row-reverse;
+  }
+  
+  .star {
+  }
+  
+  .star:before {
+	content: "\f005";
+	font-family: fontAwesome;
+
+	/* 這個可以調整星星大小 */
+	font-size: 30px;
+	
+	position: absolute;
+	/* position: auto; */
+	
+	display: block;
+	color: rgba(170, 170, 170, 0.178);
+  }
+  
+  .star:after {
+	content: "\f005";
+	font-family: fontAwesome;
+
+	/* position: absolute; */
+	position: auto;
+
+	/* top: 7px; */
+
+	/* 這個可以調整星星大小 */
+	font-size: 30px;
+	
+	color: gold;
+	opacity: 0;
+  }
+  .star:hover:after,
+  .star:hover ~ .star:after,
+  .star.star__checked:after,
+  .star.star__checked ~ .star:after{
+	opacity: 2;
+	/* opacity是在調整星星(黃色的)不透明度 */
+  }
+  
+  /* 上面是星星評價功能的the 抄 */
+
+
+  /* Border Color / Style */
+.ta3 {
+	width:230px;
+	height:60px;
+	border:2px dashed #D1C7AC;
+}
