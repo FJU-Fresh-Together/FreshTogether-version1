@@ -1154,7 +1154,7 @@ ol {
 }
 
 .price-range-wrap .price-range {
-	border-radius: 0;
+	border-radius: 3;
 }
 
 .price-range-wrap .price-range.ui-widget-content {
