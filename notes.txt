@@ -1,0 +1,5 @@
+<!-- Page Preloder -->
+<!-- 頁面重新整理的轉轉轉特效(每個頁面都要有) -->
+<div id="preloder">
+    <div class="loader"></div>
+</div>

@@ -24,6 +24,7 @@
     
     <link rel="stylesheet" href="css/for_shopping_cart/bootstrap.min.css">
 
+
 </head>
 
 <body>
@@ -35,19 +36,17 @@
     <!-- Humberger Begin -->
     <div class="humberger__menu__overlay"></div>
     <div class="humberger__menu__wrapper">
+
         <div class="humberger__menu__logo">
             <a href="#"><img src="img/logo.png" alt=""></a>
         </div>
 
         <div class="humberger__menu__cart">
-
             <ul>
                 <li><a href="#"><i class="fa fa-heart"></i> <span>1</span></a></li>
                 <li><a href="#"><i class="fa fa-shopping-bag"></i> <span>3</span></a></li>
-
             </ul>
-            <div class="header__cart__price">item: <span>$150.00</span></div>
-
+            <!-- <div class="header__cart__price">item: <span>$150.00</span></div> -->
         </div>
 
         <div id="mobile-menu-wrap"></div>
@@ -59,7 +58,7 @@
         </div>
         <div class="humberger__menu__contact">
             <ul>
-                <li><i class="fa fa-envelope"></i> hellorita@colorlib.com</li>
+                <li><i class="fa fa-envelope"></i> FreshTogerher@gmail.com</li>
                 <li>輔大資訊管理學系專題</li>
             </ul>
         </div>
@@ -68,92 +67,80 @@
 
     <!-- Header Section Begin -->
     <header class="header">
-       
 
         <!-- 導覽列 -->
         <div class="container">
             <div class="row">
+
                 <div class="col-lg-3">
                     <div class="header__logo" style="text-align: center;">
                         <!-- style="text-align: right;" -->
                         <a href="./index.html"><img src="img/logo.png" style="max-width:60%" ></a>
                     </div>
                 </div>
-
                 
                 <div class="col-lg-6">
                     <nav class="header__menu">
                         <ul>
-                           
-                            <!-- <li><a href="./contact.html">Contact</a></li> -->
-                            <!-- 買家個人資料 -->
                             <div class="hero__search__form">
                                 <form action="#">
-    
                                     <div class="">
                                         <select class="form-control"> 
                                             <option>依商品名稱搜尋</option>
                                             <option>依賣家名稱搜尋</option>
-    
                                         </select>
                                         <!-- <span class="arrow_carrot-down"></span> -->
                                     </div>
-                                    
                                     <input type="text" placeholder="What do you need?">
                                     <button type="submit" class="site-btn" width="10%">SEARCH</button>
-                                    
                                 </form>
-                               
                             </div>
                         </ul>
                     </nav>
                 </div>
                 
                 <div class="col-lg-3">
-                    
                     <div class="header__cart">
-
                         <ul>
                             <nav class="navbar  navbar-expand-sm" style="">
-
                                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-list-3" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                                   <span class="navbar-toggler-icon"></span>
                                 </button>
                                 <div class="collapse navbar-collapse" id="navbar-list-3">
-                                  <ul class="navbar-nav">
+                                    <ul class="navbar-nav">
                                     
-                                    <!-- <div style="float: right; cursor: pointer;"> -->
-                                    <li><a href="shoping-cart.html"><i class="fa fa-shopping-bag"></i> <span>4</span></a></li>
+                                        <!-- 右上角購物車小圖示 -->
+                                        <!-- <div style="float: right; cursor: pointer;"> -->
+                                        <li><a href="shoping-cart.html"><i class="fa fa-shopping-bag"></i> <span>4</span></a></li>
 
-                                      <li class="nav-item dropdown">
-                                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        <i class="fa fa-user-circle-o" style="font-size:20px;color:rgb(0, 0, 0)"></i>
 
-                                      </a>
-                                      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                        <a class="dropdown-item" href="#"><i class="fa fa-user">&nbsp;</i> 個人資料</i></a>
-                                        <a class="dropdown-item" href="#"><i class="fa fa-search">&nbsp;</i>訂單查詢</a>
-                                        <a class="dropdown-item" href="#"><i class="fa fa-search">&nbsp;</i>智能合約</a>
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <i class="fa fa-user-circle-o" style="font-size:20px;color:rgb(0, 0, 0)"></i>
+                                            </a>
 
-                                        <a class="dropdown-item" href="#"><i class="fa fa-heart">&nbsp;</i>我的最愛</a>
+                                            <!-- 買家版本 -->
+                                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                                <a class="dropdown-item" href="seller_Personal-info.html"><i class="fa fa-user">&nbsp;</i> 個人資料</i></a>
+                                                <a class="dropdown-item" href="order_buyer.html"><i class="fa fa-search">&nbsp;</i>訂單查詢</a>
+                                                <a class="dropdown-item" href="#"><i class="fa fa-list-ul">&nbsp;</i>賣場總覽</a>
+                                                <a class="dropdown-item" href="#"><i class="fa fa-heart">&nbsp;</i>我的最愛</a>
+                                                <a class="dropdown-item" href="#"><i class="fa fa-toggle-on">&nbsp;</i>登出帳號</a>
+                                            </div>
 
-                                        <a class="dropdown-item" href="#"><i class="fa fa-toggle-on">&nbsp;</i>登出帳號</a>
-                                      </div>
-                                      <!-- <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                        <a class="dropdown-item" href="#"><i class="fa fa-user"> &nbsp; </i>個人資料</a>
-                                        <a class="dropdown-item" href="#"><i class="fa fa-list-ul">&nbsp;</i>賣場介紹</a>
-                                        <a class="dropdown-item" href="#"><i class="fa fa-shopping-bag">&nbsp;</i>商品管理</a>
-                                        <a class="dropdown-item" href="#"><i class="fa fa-toggle-on">&nbsp;</i>登出帳號</a>
-                                        
-                                      </div> -->
-                                    </li>   
-                                  </ul>
+                                            <!-- 賣家版本 -->
+                                            <!-- <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                                <a class="dropdown-item" href="buyer_Personal-Info.html"><i class="fa fa-user"> &nbsp; </i>個人資料</a>
+                                                <a class="dropdown-item" href="smartcontract.html"><i class="fa fa-search">&nbsp;</i>智能合約</a>
+                                                <a class="dropdown-item" href="order_seller.html"><i class="fa fa-search">&nbsp;</i>訂單管理</a>
+                                                <a class="dropdown-item" href="store_Goods-management.html"><i class="fa fa-shopping-bag">&nbsp;</i>商品管理</a>
+                                                <a class="dropdown-item" href="#"><i class="fa fa-toggle-on">&nbsp;</i>登出帳號</a>
+                                                
+                                            </div> -->
+                                        </li>   
+                                    </ul>
                                 </div>
-   
-
-                          
                             </nav>
-                            
                         </ul>
                         <!-- <div class="header__cart__price">item: <span>$150.00</span></div> -->
                     </div>
@@ -173,25 +160,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-3">
-                    <!-- <div class="hero__categories">
-                        <div class="hero__categories__all">
-                            <i class="fa fa-bars"></i>
-                            <span>All departments</span>
-                        </div>
-                        <ul>
-                            <li><a href="#">Fresh Meat</a></li>
-                            <li><a href="#">Vegetables</a></li>
-                            <li><a href="#">Fruit & Nut Gifts</a></li>
-                            <li><a href="#">Fresh Berries</a></li>
-                            <li><a href="#">Ocean Foods</a></li>
-                            <li><a href="#">Butter & Eggs</a></li>
-                            <li><a href="#">Fastfood</a></li>
-                            <li><a href="#">Fresh Onion</a></li>
-                            <li><a href="#">Papayaya & Crisps</a></li>
-                            <li><a href="#">Oatmeal</a></li>
-                            <li><a href="#">Fresh Bananas</a></li>
-                        </ul>
-                    </div> -->
+
                 </div>
                 <div class="col-lg-12">
                     <div class="hero__search">
@@ -248,6 +217,7 @@
         </div>
     </section>
     <!-- Categories Section End -->
+
 
     <!-- Featured Section Begin -->
     <section class="featured spad">
@@ -619,66 +589,7 @@
     </section>
     <!-- Latest Product Section End -->
 
-    <!-- Blog Section Begin -->
-    <section class="from-blog spad">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="section-title from-blog__title">
-                        <h2>From The Blog</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-md-4 col-sm-6">
-                    <div class="blog__item">
-                        <div class="blog__item__pic">
-                            <img src="img/blog/blog-1.jpg" alt="">
-                        </div>
-                        <div class="blog__item__text">
-                            <ul>
-                                <li><i class="fa fa-calendar-o"></i> May 4,2019</li>
-                                <li><i class="fa fa-comment-o"></i> 5</li>
-                            </ul>
-                            <h5><a href="#">Cooking tips make cooking simple</a></h5>
-                            <p>Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam quaerat </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6">
-                    <div class="blog__item">
-                        <div class="blog__item__pic">
-                            <img src="img/blog/blog-2.jpg" alt="">
-                        </div>
-                        <div class="blog__item__text">
-                            <ul>
-                                <li><i class="fa fa-calendar-o"></i> May 4,2019</li>
-                                <li><i class="fa fa-comment-o"></i> 5</li>
-                            </ul>
-                            <h5><a href="#">6 ways to prepare breakfast for 30</a></h5>
-                            <p>Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam quaerat </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6">
-                    <div class="blog__item">
-                        <div class="blog__item__pic">
-                            <img src="img/blog/blog-3.jpg" alt="">
-                        </div>
-                        <div class="blog__item__text">
-                            <ul>
-                                <li><i class="fa fa-calendar-o"></i> May 4,2019</li>
-                                <li><i class="fa fa-comment-o"></i> 5</li>
-                            </ul>
-                            <h5><a href="#">Visit the clean farm in the US</a></h5>
-                            <p>Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam quaerat </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Blog Section End -->
+
 
     <!-- Footer Section Begin -->
     <footer class="footer spad">
@@ -740,8 +651,8 @@
                 <div class="col-lg-12">
                     <div class="footer__copyright">
                         <div class="footer__copyright__text"><p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p></div>
+                                Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p></div>
                         <div class="footer__copyright__payment"><img src="img/payment-item.png" alt=""></div>
                     </div>
                 </div>
@@ -763,6 +674,7 @@
     <script src="js/for_shopping_cart/jquery-2.2.3.min.js"></script>
     <script type='text/javascript'src="js/for_shopping_cart/bootstrap.min.js"></script>
     <script type='text/javascript' src="js/for_shopping_cart/jquery.mycart.js"></script>
+
 
 </body>
 

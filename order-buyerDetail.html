@@ -22,6 +22,23 @@
     <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
+    <style>
+        .title{
+            font-weight: bold;
+            
+            width:500px;
+            font-size: 20px;
+        }
+        select{
+            padding: 2px 5px;
+            border:solid 2px black;
+        }
+        .checkout_form{
+            
+        }
+        
+    </style>
+
 
 <body>
     <!-- Page Preloder -->
@@ -88,15 +105,12 @@
     </div>
     <!-- Humberger End -->
 
-    <!-- Header Section Begin -->
-    <header class="header">
-       
-
-        <!-- 第二排功能導覽列 -->
+        <!-- 導覽列 -->
         <div class="container">
             <div class="row">
                 <div class="col-lg-3">
-                    <div class="header__logo">
+                    <div class="header__logo" >
+                        <!-- style="text-align: right;" -->
                         <a href="./index.html"><img src="img/logo.png" alt="" ></a>
                     </div>
                 </div>
@@ -183,144 +197,91 @@
                 <i class="fa fa-bars"></i>
             </div>
         </div>
-        <!-- 第二排功能導覽列END -->
-    </header>
-    <!-- Header Section End -->
+        <!-- 導覽列END -->
 
-
-    <!-- Shoping Cart Section Begin -->
-    <section class="shoping-cart spad">
+    <!-- Checkout Section Begin -->
+    <section class="checkout spad">
         <div class="container">
-            <div class="checkout__form">
-                <h4>購物車</h4>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="shoping__cart__table">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <div class="basket-labels">
-                                        <th class="shoping__product ">Products</th>
-                                        <th>Price</th>
-                                        <th>Quantity</th>
-                                        <th>Total</th>
-                                        <th></th>
-                                    </div>
-                                </tr>
-                            </thead>
-                            
-                            <tbody>
-          
-                                <tr>
-                                    <td class="shoping__cart__item">
-                                        <img src="img/cart/cart-1.jpg" alt="">
-                                        <h5>Vegetable’s Package</h5>
-                                    </td>
-                                    <td class="shoping__cart__price">
-                                        $55.00
-                                    </td>
-                                    <td class="shoping__cart__quantity">
-                                        <div class="quantity">
-                                            <div class="pro-qty quantity-field">
-                                                <input type="text" value="1">
-                                            </div>
-                                        </div>
-                                    </td>
-                                    
-                                    <td class="shoping__cart__total">
-                                        $110.00
-                                    </td>
-                                    <td class="shoping__cart__item__close">
-                                        <span class="icon_close"></span>
-                                    </td>
-                                </tr>
 
-                                
-                                <tr>
-                                    <td class="shoping__cart__item">
-                                        <img src="img/cart/cart-2.jpg" alt="">
-                                        <h5>Fresh Garden Vegetable</h5>
-                                    </td>
-                                    <td class="shoping__cart__price">
-                                        $39.00
-                                    </td>
-                                    <td class="shoping__cart__quantity">
-                                        <div class="quantity">
-                                            <div class="pro-qty">
-                                                <input type="text" value="1">
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td class="shoping__cart__total">
-                                        $39.99
-                                    </td>
-                                    <td class="shoping__cart__item__close">
-                                        <span class="icon_close"></span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="shoping__cart__item">
-                                        <img src="img/cart/cart-3.jpg" alt="">
-                                        <h5>Organic Bananas</h5>
-                                    </td>
-                                    <td class="shoping__cart__price">
-                                        $69.00
-                                    </td>
-                                    <td class="shoping__cart__quantity">
-                                        <div class="quantity">
-                                            <div class="pro-qty">
-                                                <input type="text" value="1">
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td class="shoping__cart__total">
-                                        $69.99
-                                    </td>
-                                    <td class="shoping__cart__item__close">
-                                        <span class="icon_close"></span>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="shoping__cart__btns">
-                        <a href="#" class="primary-btn cart-btn">CONTINUE SHOPPING</a>
-                        <a href="#" class="primary-btn cart-btn cart-btn-right"><span class="icon_loading"></span>
-                            Upadate Cart</a>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="shoping__continue">
-                        <div class="shoping__discount">
-                            <h5>Discount Codes</h5>
-                            <form action="#">
-                                <input type="text" placeholder="Enter your coupon code">
-                                <button type="submit" class="site-btn">APPLY COUPON</button>
-                            </form>
+            <div class="checkout__form"  style="padding:20px">
+                <h4>訂購資料</h4>
+                <form action="#">
+                    <div class="row">
+                        <div class="col-lg-8 col-md-6">
+                            <h3 class="title" style="padding-bottom:10px;">運送方式</h3>
+                        
+                          <select class="form-control" name="" id="">
+                                <option value="" >宅配 </option>
+                                <option value="" >7-11 </option>
+                                <option value="" >全家 </option>
+                          </select>
+                        
                         </div>
+               
                     </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="shoping__checkout">
-                        <h5>Cart Total</h5>
-                        <ul>
-                            <li>Subtotal <span>$454.98</span></li>
-                            <li>Total <span>$454.98</span></li>
-                        </ul>
-                        <a href="#" class="primary-btn">PROCEED TO CHECKOUT</a>
-                    </div>
-                </div>
+                    
+                </form>
             </div>
+            <div class="checkout__form" style="padding:20px">
+              
+                <form action="#">
+                    <div class="row">
+                        <div class="col-lg-8 col-md-6">
+                            <h3 class="title" style="padding-bottom:10px">收貨人資料</h3>
+                            <div class="checkout__input">
+                                <p>收貨地址<span>*</span></p>
+                                <input type="text">
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="checkout__input">
+                                        <p>姓名<span>*</span></p>
+                                        <input type="text">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="checkout__input">
+                                        <p>電話<span>*</span></p>
+                                        <input type="text">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+               
+                    </div>
+                    
+                </form>
+            </div>
+            <div class="checkout__form" style="padding:20px">
+              
+                <form action="#">
+                    <div class="row">
+                        <div class="col-lg-8 col-md-6">
+                            
+                            <h3 class="title" style="padding-bottom:10px">付款方式</h3>
+                        
+                          <select class="form-control" name="" id="">
+                                <option value="" >信用卡 </option>
+                                <option value="" >貨到付款 </option>
+                                <option value="" >虛擬帳戶匯款 </option>
+                          </select>
+                          <br><br><br>
+                          <button type="submit" class="site-btn">儲存變更</button>
+
+                        </div>
+               
+                    </div>
+                    
+                </form>
+            </div>
+          
         </div>
+        <div style="padding-left:50%">
+        <!-- <button type="submit" class="site-btn" style="float: right;margin-right: 600px;" >訂單送出</button> -->
+    </div>
     </section>
-    <!-- Shoping Cart Section End -->
+    
+    <!-- Checkout Section End -->
 
     <!-- Footer Section Begin -->
     <footer class="footer spad">
@@ -400,6 +361,7 @@
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
 
+ 
 
 </body>
 

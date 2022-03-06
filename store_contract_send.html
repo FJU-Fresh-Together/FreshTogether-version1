@@ -36,7 +36,15 @@
         }
 
  
-        </style>
+    </style>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script data-require="jquery@*" data-semver="3.0.0" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.js"></script>
+
+    <link data-require="bootstrap@*" data-semver="4.0.0-alpha.2" rel="stylesheet" href="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.css" />
+    <script data-require="bootstrap@*" data-semver="4.0.0-alpha.2" src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
 </head>
 <body>
 
@@ -225,95 +233,57 @@
                             <div>
                               
  
- <input id="imgPicker" type="file" />
- <img id="preview" />
- 
- <img id="demo"/>
- <script>
- document
-     .querySelector('#imgPicker')
-     .addEventListener('change', function(){
-         if(this.files.length === 0){
-             document.querySelector('#preview').src = '';
-             return;
-         }
-         
-         var reader = new FileReader();
- 
-         reader.onload = function (e) {
-             document.querySelector('#preview').src = e.target.result;
-         };
- 
-     reader.readAsDataURL(this.files[0]);
-     }, false);
- </script>
- <br>
- <br>
- <br>
- 
- <br>
- <br>
+                                <input id="imgPicker" type="file" />
+                                <img id="preview" />
+                                
+                                <img id="demo"/>
+                                <script>
+                                document
+                                    .querySelector('#imgPicker')
+                                    .addEventListener('change', function(){
+                                        if(this.files.length === 0){
+                                            document.querySelector('#preview').src = '';
+                                            return;
+                                        }
+                                        
+                                        var reader = new FileReader();
+                                
+                                        reader.onload = function (e) {
+                                            document.querySelector('#preview').src = e.target.result;
+                                        };
+                                
+                                    reader.readAsDataURL(this.files[0]);
+                                    }, false);
+                                </script>
+                                <br>
+                                <br>
+                                <br>
+                                
+                                <br>
+                                <br>
+
                             <h5><b>商品販售資訊</b></h5><br>
                             <div class="checkout__input">
                                 <p>商品價格</p>
                                 <input type="text">                               
                             </div>
-                             <!-- 嘗試的第一種下拉式選單 -->
-                            <!-- <div class="checkout__input" style="display:inline";>
-                                <p>合作店家數量&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <div class="count-input">
-                                        <select class="form-control">
-                                            <option value="0">0</option>
-                                            <option value="1">1</option>
-                                            <option value="2">2</option>
-                                        </select>
-                                    </div> 
-                                </p>
-  
-                            </div> -->
-                            <!-- 嘗試的第二種下拉式選單 -->
-                            <!-- <div class="checkout__input"></div>
-                            <script type='text/javascript'>
-                                function addFields(){
-                                    // Number of inputs to create
-                                    var number = document.getElementById("member").value;
-                                    // Container <div> where dynamic content will be placed
-                                    var container = document.getElementById("container");
-                                    // Clear previous contents of the container
-                                    while (container.hasChildNodes()) {
-                                        container.removeChild(container.lastChild);
-                                    }
-                                    for (i=0;i<number;i++){
-                                        // Append a node with a random text
-                                        container.appendChild(document.createTextNode("Member " + (i+1)));
-                                        // Create an <input> element, set its type and name attributes
-                                        var input = document.createElement("input");
-                                        input.type = "text";
-                                        input.name = "member" + i;
-                                        container.appendChild(input);
-                                        // Append a line break 
-                                        container.appendChild(document.createElement("br"));
-                                    }
-                                }
-                              
-                            </script>
-                            
                         
-                            <input type="number" id="member" name="member" value="" min="0" max="2">&nbsp;&nbsp;&nbsp;
-                            <input type="submit" id="filldetails" onclick="addFields()">
-                            <div id="container"/> -->
-                            
-                     
-                            <div class="checkout__input">
-                                <p>合作店家數量</p>                            
-                            </div>
-                            <div class="product__details__quantity">
-                                <div class="quantity">
-                                    <div class="pro-qty">
-                                        <input type="text" value="1">
-                                    </div>
+                            <div>
+                                <div class="checkout__input">
+                                    <p>合作店家數量</p>                            
                                 </div>
+
+
+                                <!-- <div class="product__details__quantity">
+                                    <div class="quantity">
+                                        <div class="pro-qty">
+                                            <input type="text" value="1">
+                                        </div>
+                                    </div>
+                                </div> -->
+
                             </div>
+
                             <br>
                             <br>
                             <hr/>
@@ -328,87 +298,46 @@
 
                             <hr/>
 
-                            <div class="checkout__input">
-                                <p>B方店家帳號</p>
-                                <input type="text">                             
-                            </div>
+                            <input type="button" class="btn btn-danger btn-sm" name="minus" id="minus" value="-" style="font-size:21px; line-height:12px; border-radius:4px; margin-right:2px;margin-left:2px;margin-top:6px;display:none;">
 
-                            <div class="checkout__input">
-                                <p>B方店家名稱</p>
-                                <input type="text">                             
-                            </div>
-                            <div class="checkout__input">
-                                <p>A方分潤比例（您）</p>
-                                <input type="text">                               
-                            </div>
-                            <div class="checkout__input">
-                                <p>B方分潤比例</p>
-                                <input type="text">                               
-                            </div>
+                            <input type="button" class="btn btn-success btn-sm" name="minus" id="plus" value="+" style="font-size:21px; line-height:12px; border-radius:4px; margin-right:2px;margin-left:2px;margin-top:6px;">
 
-                            <!-- <div class="sidebar__item">
-                                <h4>Price</h4>
-                                <div class="price-range-wrap">
-                                    <div class="price-range ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content"
-                                        data-min="0" data-max="100">
-                                        <div class="ui-slider-range ui-corner-all ui-widget-header"></div>
-                                        <span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default"></span>
-                                        <span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default"></span>
-                                    </div>
-                                    <div class="range-slider">
-                                        <div class="price-input">
-                                            <input type="text" id="minamount">
-                                            <input type="text" id="maxamount">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div> -->
+                            <div class="form-group" id="intro-box">
+                                <input type="text" style="width:85%;float:left; margin-bottom:5px;" class="form-control introlabelname" name="introlabelname" placeholder="Label Name" value="">
+                                <!-- + -->
+                                <!-- <input type="button" class="btn btn-success btn-sm" name="minus" id="plus" value="+" style="font-size:21px; line-height:12px; border-radius:4px; margin-right:2px;margin-left:2px;margin-top:6px;"> -->
+                                <!-- - -->
+                                <!-- <input type="button" class="btn btn-danger btn-sm" name="minus" id="minus" value="-" style="font-size:21px; line-height:12px; border-radius:4px; margin-right:2px;margin-left:2px;margin-top:6px;display:none;"> -->
+                              </div>
+                              <script>
+                                // Code goes here
                             
-                            <div class="checkout3__input">
-                                <p>備註</p>
-                                <textarea id="story" name="story" 
-                                 ></textarea>
-                            </div>
-                            &nbsp;
+                                $(function() {
+                                  function toggle() {
+                                    $("#minus").toggle($("[name=introlabelname]").length > 1);
+                                    
+                                  }
+                                  function addMore() {
+                                    $('#intro-box').append('<input type="text" style="width:85%;float:left; margin-bottom:5px;" class="form-control introlabelname" name="introlabelname" placeholder="Label Name" value="">');
+                                    toggle()
+                                    
+                                  }
+                                  function removeOne() {
+                                    $("[name=introlabelname]").last().remove()
+                                    toggle()
+                                  }
+                               
+                                  $("#plus").click(addMore);
+                                  $("#minus").click(removeOne)
+                                })
+                              </script>
                             
-
-  
-                            <!-- <div class="checkout__input">
-                                <p>商品總數&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;總共有&nbsp;15&nbsp; 個商品品項&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>                                
-                            </div> -->
                             <br><br>
-                            <!-- <input type="checkbox" name="order" id='order_1' value='aa'> 確定看完上述智能合約，同意上述內容!<br> -->
-                           
-
-                           
-
+                            <br><br>
+                            <br>
                             <br>
                            <div>
               
-<!-- <input id="imgPicker" type="file" />
-<img id="preview" />
-
-<img id="demo"/>
-<script>
-document
-    .querySelector('#imgPicker')
-    .addEventListener('change', function(){
-        if(this.files.length === 0){
-            document.querySelector('#preview').src = '';
-            return;
-        }
-        
-        var reader = new FileReader();
-
-        reader.onload = function (e) {
-            document.querySelector('#preview').src = e.target.result;
-        };
-
-    reader.readAsDataURL(this.files[0]);
-    }, false);
-</script>
-<br>
-<br> -->
 
 </div>
  
