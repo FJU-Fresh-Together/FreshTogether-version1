@@ -868,7 +868,7 @@ ol {
 }
 
 .featured__item__pic {
-	height: 180px;
+	height: 270px;
 	position: relative;
 	overflow: hidden;
 	background-position: center center;
@@ -2032,8 +2032,9 @@ ol {
 .shoping__checkout {
 	background: #f5f5f5;
 	padding: 30px;
-	padding-top: 20px;
-	margin-top: 50px;
+	padding-top: 0px;
+	margin-top: 0px;
+	width:45%;
 }
 
 .shoping__checkout h5 {
@@ -2064,7 +2065,7 @@ ol {
 	margin-bottom: 0;
 }
 
-.shoping__checkout ul li span {
+.shoping__checkout span {
 	font-size: 18px;
 	color: #dd2222;
 	float: right;
