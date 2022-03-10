@@ -15,23 +15,25 @@
 </head>
 <body>
     
-        <div class="login-wrap">
+    <div class="login-wrap">
             
         <div class="login-html">
             <img src="./img/back.png" alt="Girl in a jacket" width="30" height="30" type="button" onclick="history.back()">
             <br><br>
             <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Sign In</label>
             <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Sign Up</label>
+
             <div class="login-form">
+
                 <!-- sign-in-htm -->
                 <div class="sign-in-htm">
 
                     <div class="group">
-                        <label for="user" class="label">Username</label>
+                        <label for="user" class="label">使用者名稱</label>
                         <input id="user" type="text" class="input">
                     </div>
                     <div class="group">
-                        <label for="pass" class="label">Password</label>
+                        <label for="pass" class="label">密碼</label>
                         <input id="pass" type="password" class="input" data-type="password">
                     </div>
                     <div class="group">
@@ -42,21 +44,18 @@
                         <input type="submit" class="button" value="Sign In">
                     </div>
                     <div class="hr"></div>
-                    <!-- <div class="foot-lnk">
-                        <a href="#forgot">Forgot Password?</a> <br>
-                        <img src="./img/logo.png" alt="Girl in a jacket" width="150" height="auto" type="button" onclick="history.back()">
-                    </div> -->
+
                 </div>
                 <!-- sign-in-htm end -->
 
                 <!-- sign-up-htm -->
                 <div class="sign-up-htm">
                     <div class="group">
-                        <label for="user" class="label">Username</label>
+                        <label for="user" class="label">使用者名稱</label>
                         <input id="user" type="text" class="input">
                     </div>
                     <div class="group">
-                        <label for="pass" class="label">Password</label>
+                        <label for="pass" class="label">密碼</label>
                         <input id="pass" type="password" class="input" data-type="password">
                     </div>
                     <!-- <div class="group">
@@ -64,17 +63,21 @@
                         <input id="pass" type="password" class="input" data-type="password">
                     </div> -->
                     <div class="group">
-                        <label for="pass" class="label">Email Address</label>
+                        <label for="pass" class="label">電話號碼</label>
+                        <input id="pass" type="text" class="input">
+                    </div>
+
+                    <div class="group">
+                        <label for="pass" class="label">Email</label>
                         <input id="pass" type="text" class="input">
                     </div>
 
                     <div class="group">
                         <form action="/action_page.php">
-                            <input type="radio" id="vehicle1" name="vehicle" value="Bike">
-                            <label for="vehicle1"> 我想成為賣家</label>
                             <input type="radio" id="vehicle2" name="vehicle" value="Car">
                             <label for="vehicle2"> 我想成為買家</label><br>
-    
+                            <input type="radio" id="vehicle1" name="vehicle" value="Bike">
+                            <label for="vehicle1"> 我想成為賣家（有其他資訊需要建立填寫）</label>
                           </form>
                           
                     </div>
@@ -83,12 +86,16 @@
                         <input type="submit" class="button" value="Sign Up">
                     </div>
                     <div class="hr"></div>
-                    <div class="foot-lnk">
+                    <!-- <div class="foot-lnk">
                         <label for="tab-1">Already Have Account?</a>
-                    </div>
+                    </div> -->
 
                 </div>
                 <!-- sign-up-htm end -->
+        
+
+                
+
             </div>
         </div>
     </div>
