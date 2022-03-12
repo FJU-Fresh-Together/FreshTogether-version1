@@ -48,7 +48,7 @@
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css" />
 </head>
 
-<body onload="ShowTime()">
+<body>
 
     <div id="preloder">
         <div class="loader"></div>
@@ -127,22 +127,22 @@
 
 <!-- 中間詳細內容 -->
 <section class="checkout spad">
-
     <div class="container">
+
         <div class="checkout__form">
-            <h4>建立智能合約</h4>
+            <h4>智能合約詳細資訊</h4>
+
+            <h7>合約編號：I4522566322</h7><br>
+            <h7>建立時間：2020.12.30</h7><br>
+            <h7>目前狀態：確認中</h7><br>
+            <h4></h4>
+            <br><br>
+
             <h5 class="m-0">
-                <a>選擇智能合約合作對象</a>
+                <a>智能合約合作對象</a>
             </h5>
             <br>
-            <div class="div_test">
-                <input type="text" id="id" placeholder="請輸入賣家編號" style="text-align: center;">
-                <input type="text" id="name"  placeholder="請輸入商店名稱" style="text-align: center;">
-                <!-- <input type="number" id="gender"  placeholder="請輸入利潤比例分配"> -->
-                <input type="number" id="gender" placeholder="20％" style="text-align: center;">
-                <input type="button" value="添加" id="btn_add">
-            </div>
-            <br>
+
             <form action="#">
                 <table class="tat_test,td_test">
                     <!-- 表格标题
@@ -152,36 +152,40 @@
                         <th class="td_test">賣家編號</th>
                         <th class="td_test">商店名稱</th>
                         <th class="td_test">分配比例（％）</th>
-                        <th class="td_test">刪除動作</th>
+                        <th class="td_test">身分</th>
                     </tr>
                 
                     <!-- 表格第二行：信息2 -->
                     <tr>
                         <td class="td_test">408402222</td>
                         <td class="td_test">開開心心蔬果鋪</td>
-                        <td class="td_test" width="10px" >
-                            <input placeholder="20" type="number" value="请输入文本" style="text-align: center;margin-left: 17px;border-color:rgba(155, 155, 155, 0)"></td>
+                        <td class="td_test" width="10px" >80</td>
                         <!-- 在该单元格中创建一个链接标签，void运算符来阻止href返回值，通过onclick事件(鼠标点击)属性来删除信息行-->
-                        <td class="td_test"><a style="/* border: 1px solid rgba(30, 59, 28, 0); */text-align: center;">這是您自己</a></td>
+                        <td class="td_test"><a style="/* border: 1px solid rgba(30, 59, 28, 0); */text-align: center;">發起者</a></td>
                     </tr>
-                
-                    <!-- 表格第三行：信息2 -->
-                    <!-- <tr>
-                        <td class="td_test">408409999</td>
-                        <td class="td_test">我只賣超好吃的蔬菜</td>
-                        <td class="td_test" width="10px" >
-                            <input placeholder="20" type="number" value="请输入文本" style=" text-align: center;border-color:rgba(155, 155, 155, 0)">
-                        </td>                         -->
+                                
+                    <tr>
+                        <td class="td_test">408405552</td>
+                        <td class="td_test">YRURUY蔬果鋪</td>
+                        <td class="td_test" width="10px" >10</td>
                         <!-- 在该单元格中创建一个链接标签，void运算符来阻止href返回值，通过onclick事件(鼠标点击)属性来删除信息行-->
-                        <!-- <td class="td_test"><a href="javascript:void(0);" onclick="delTr(this);" style="/* border: 0px solid rgba(30, 59, 28, 0); */text-align: center;">刪除</a></td>
-                    </tr> -->
+                        <td class="td_test"><a style="/* border: 1px solid rgba(30, 59, 28, 0); */text-align: center;">受邀者</a></td>
+                    </tr>
+
+                    <tr>
+                        <td class="td_test">408405589</td>
+                        <td class="td_test">RRRRQQ蔬果鋪</td>
+                        <td class="td_test" width="10px" >10</td>
+                        <!-- 在该单元格中创建一个链接标签，void运算符来阻止href返回值，通过onclick事件(鼠标点击)属性来删除信息行-->
+                        <td class="td_test"><a style="/* border: 1px solid rgba(30, 59, 28, 0); */text-align: center;">受邀者</a></td>
+                    </tr>
 
                 </table>
             </form>
 
             <br><br>
             <h5 class="m-0">
-                <a>選擇智能合約商品內容</a>
+                <a>智能合約商品內容</a>
             </h5>
             <br>
             <table id="myDataTalbe"  class="display"  >
@@ -189,7 +193,6 @@
                     <!--必填-->
         
                     <tr>
-                        <th>勾選</th>
                         <th>商品編號</th>
                         <th>商品名稱</th>
                         <th>商品價格</th>
@@ -197,26 +200,20 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>
-                            <input type="checkbox">
-                        </td>
+
                         <td>999000</td>
                         <td>蘋果</td>
                         <td>＄30</td>
                     </tr>
                     <tr>
-                        <td>
-                            <input type="checkbox">
-                        </td>
+  
                         <td>90077</td>
                         <td>香蕉</td>
                         <td>＄66</td>
 
                     </tr>
                     <tr>
-                        <td>
-                            <input type="checkbox">
-                        </td>
+
                         <td>55566</td>
                         <td>櫻桃</td>
                         <td>＄230</td>
@@ -233,17 +230,10 @@
             <textarea></textarea>
         </div>
         <br><br>
-        <button type="submit" class="site-btn">送出申請</button>
-        <button type="button" class="site-white-btn" onclick="history.back()">取消</button>
+        <button type="submit" class="site-btn">註銷合約</button>
+        <button type="button" class="site-white-btn" onclick="history.back()">回上一頁</button>
         <br><br>
-        <div id="showbox"></div>
-
-        <script language="JavaScript">
-            function ShowTime(){
-            　document.getElementById('showbox').innerHTML = new Date();
-            　setTimeout('ShowTime()',1000);
-            }
-        </script>
+       <h5 style="color: darkred;font-weight:bolder;">注意！註銷合約不可逆，註銷後需重新建立合約！</h5>
     </div>
 
 </section>
