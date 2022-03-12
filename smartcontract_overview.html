@@ -177,16 +177,17 @@
                     <button class="btn btn-outline-success my-2 my-sm-0" type="submit" >Search</button>
                     
                     
-                </form>
+                  </form>
                   <BR>
                     <BR>
                 <div class="featured__controls">
                     <ul class="nav nav-tabs" data-tabs="tabs" style="display: contents;">
                         <li><a style="color:black;font-weight: bold;" class="active"  href="#aaa" data-toggle="tab">全部</a></li>
-                        <li><a style="color:black;font-weight: bold;" href="#bbb" data-toggle="tab">履約中</a></li>
-                        <li><a style="color:black;font-weight: bold;" href="#ccc" data-toggle="tab">確認中</a></li>
-                        <li><a style="color:black;font-weight: bold;" href="#ddd" data-toggle="tab">已退回</a></li>
-                        <li><a style="color:black;font-weight: bold;" href="#eee" data-toggle="tab">合約到期</a></li>
+                        <li><a style="color:black;font-weight: bold;" href="#bbb" data-toggle="tab">確認中</a></li>
+                        <li><a style="color:black;font-weight: bold;" href="#ccc" data-toggle="tab">審查中</a></li>
+                        <li><a style="color:black;font-weight: bold;" href="#ddd" data-toggle="tab">履約中</a></li>
+                        <li><a style="color:black;font-weight: bold;" href="#eee" data-toggle="tab">合約遭拒</a></li>
+                        <li><a style="color:black;font-weight: bold;" href="#fff" data-toggle="tab">審查失敗</a></li>
                     </ul>
                 </div>
             </div>
@@ -207,12 +208,12 @@
             <table >
                 <thead>
                     <tr>
-                        <th class="shoping__product">合約編號</th>
+                        <th class="shoping__product">編號</th>
                         
-                        <th>合約對象<br>店家帳號</th>
-                        <th>最後時間</th>
-                        <th>版次</th>
-                        <th>合約狀態</th>
+                        <th>建立者</th>
+                        <th>建立時間</th>
+                        <th>版本</th>
+                        <th>狀態</th>
                         <th>詳細資訊</th>
                     </tr>
                 </thead>
@@ -234,10 +235,32 @@
                         </td>
                       
                         <td class="shoping__cart__price">
-                            履約中
+                           <span style="color:rgb(50, 126, 214);">確認中</span>
                         </td>
                         <td class="shoping__cart__status">
-                            <input type ="button" class="btn btn-success" onclick="javascript:location.href='store_contract_accept.html'" value="詳細合約內容"></input>
+                            <input type ="button" class="btn btn-light" onclick="javascript:location.href='store_contract_accept.html'" value="內容"></input>
+                        </td>
+         
+                    </tr>
+                    <tr>
+                        <td class="shoping__cart__item">
+                            <h5>I4522566589</h5>
+                        </td>
+                        <td class="shoping__cart__status">
+                            47857469
+                        </td>
+                        <td class="shoping__cart__status">
+                            2020.11.09
+                        </td>
+                        <td class="shoping__cart__status">
+                            第三版
+                        </td>
+                      
+                        <td class="shoping__cart__price">
+                             <span style="color:yellowgreen;">審查中</span>
+                        </td>
+                        <td class="shoping__cart__status">
+                            <input type ="button" class="btn btn-light" onclick="javascript:location.href='store_contract_accept.html'" value="內容"></input>
                         </td>
          
                     </tr>
@@ -256,10 +279,10 @@
                         </td>
                       
                         <td class="shoping__cart__price">
-                            確認中
+                            <span style="color:green;">履約中</span>
                         </td>
                         <td class="shoping__cart__status">
-                            <input type ="button" class="btn btn-warning" onclick="javascript:location.href='store_contract_accept.html'" value="詳細合約內容"></input>
+                            <input type ="button" class="btn btn-light" onclick="javascript:location.href='store_contract_accept.html'" value="內容"></input>
                         </td>
          
                     </tr>
@@ -278,10 +301,10 @@
                         </td>
                       
                         <td class="shoping__cart__price">
-                            已退回
+                            <span style="color:red;">合約遭拒</span>
                         </td>
                         <td class="shoping__cart__status">
-                            <input type ="button" class="btn btn-danger" onclick="javascript:location.href='store_contract_accept.html'" value="詳細合約內容"></input>
+                            <input type ="button" class="btn btn-light" onclick="javascript:location.href='store_contract_accept.html'" value="內容"></input>
                         </td>
          
                     </tr>
@@ -300,13 +323,15 @@
                         </td>
                       
                         <td class="shoping__cart__price">
-                            合約到期
+                            <span style="color:orange;">審查失敗</span>
                         </td>
                         <td class="shoping__cart__status">
-                            <input type ="button" class="btn btn-primary" onclick="javascript:location.href='store_contract_accept.html'" value="詳細合約內容"></input>
+                            <input type ="button" class="btn btn-light" onclick="javascript:location.href='store_contract_accept.html'" value="內容"></input>
                         </td>
          
                     </tr>
+
+
 
                 </tbody>
             </table>
@@ -319,10 +344,10 @@
                     <tr>
                         <th class="shoping__product">合約編號</th>
                         
-                        <th>合約對象<br>店家帳號</th>
-                        <th>最後時間</th>
-                        <th>版次</th>
-                        <th>合約狀態</th>
+                        <th>建立者</th>
+                        <th>建立時間</th>
+                        <th>版本</th>
+                        <th>狀態</th>
                         <th>詳細資訊</th>
                     </tr>
                 </thead>
@@ -344,10 +369,10 @@
                         </td>
                       
                         <td class="shoping__cart__price">
-                            履約中
+                           <span style="color:rgb(50, 126, 214);">確認中</span>
                         </td>
                         <td class="shoping__cart__status">
-                            <input type ="button" class="btn btn-success" onclick="javascript:location.href='store_contract_accept.html'" value="詳細合約內容"></input>
+                            <input type ="button" class="btn btn-light" onclick="javascript:location.href='store_contract_accept.html'" value="內容"></input>
                         </td>
          
                     </tr>
@@ -363,10 +388,10 @@
                     <tr>
                         <th class="shoping__product">合約編號</th>
                         
-                        <th>合約對象<br>店家帳號</th>
-                        <th>最後時間</th>
-                        <th>版次</th>
-                        <th>合約狀態</th>
+                        <th>建立者</th>
+                        <th>建立時間</th>
+                        <th>版本</th>
+                        <th>狀態</th>
                         <th>詳細資訊</th>
                     </tr>
                 </thead>
@@ -375,23 +400,23 @@
 
                     <tr>
                         <td class="shoping__cart__item">
-                            <h5>I4522566524</h5>
+                            <h5>I4522566589</h5>
                         </td>
                         <td class="shoping__cart__status">
-                            47859426
+                            47857469
                         </td>
                         <td class="shoping__cart__status">
-                            2020.12.18
+                            2020.11.09
                         </td>
                         <td class="shoping__cart__status">
-                            第二版
+                            第三版
                         </td>
                       
                         <td class="shoping__cart__price">
-                            確認中
+                             <span style="color:yellowgreen;">審查中</span>
                         </td>
                         <td class="shoping__cart__status">
-                            <input type ="button" class="btn btn-warning" onclick="javascript:location.href='store_contract_accept.html'" value="詳細合約內容"></input>
+                            <input type ="button" class="btn btn-light" onclick="javascript:location.href='store_contract_accept.html'" value="內容"></input>
                         </td>
          
                     </tr>
@@ -408,10 +433,54 @@
                     <tr>
                         <th class="shoping__product">合約編號</th>
                         
-                        <th>合約對象<br>店家帳號</th>
-                        <th>最後時間</th>
-                        <th>版次</th>
-                        <th>合約狀態</th>
+                        <th>建立者</th>
+                        <th>建立時間</th>
+                        <th>版本</th>
+                        <th>狀態</th>
+                        <th>詳細資訊</th>
+                    </tr>
+                </thead>
+                
+                <tbody >
+
+                    <tr>
+                        <td class="shoping__cart__item">
+                            <h5>I4522566524</h5>
+                        </td>
+                        <td class="shoping__cart__status">
+                            47859426
+                        </td>
+                        <td class="shoping__cart__status">
+                            2020.12.18
+                        </td>
+                        <td class="shoping__cart__status">
+                            第二版
+                        </td>
+                      
+                        <td class="shoping__cart__price">
+                            <span style="color:green;">履約中</span>
+                        </td>
+                        <td class="shoping__cart__status">
+                            <input type ="button" class="btn btn-light" onclick="javascript:location.href='store_contract_accept.html'" value="內容"></input>
+                        </td>
+         
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+<!-- 05 -->
+        <div class="shoping__cart__table tab-pane fade" id="eee">
+
+            <table >
+                <thead>
+                    <tr>
+                        <th class="shoping__product">合約編號</th>
+                        
+                        <th>建立者</th>
+                        <th>建立時間</th>
+                        <th>版本</th>
+                        <th>狀態</th>
                         <th>詳細資訊</th>
                     </tr>
                 </thead>
@@ -433,10 +502,10 @@
                         </td>
                       
                         <td class="shoping__cart__price">
-                            已退回
+                            <span style="color:red;">合約遭拒</span>
                         </td>
                         <td class="shoping__cart__status">
-                            <input type ="button" class="btn btn-danger" onclick="javascript:location.href='store_contract_accept.html'" value="詳細合約內容"></input>
+                            <input type ="button" class="btn btn-light" onclick="javascript:location.href='store_contract_accept.html'" value="內容"></input>
                         </td>
          
                     </tr>
@@ -444,18 +513,18 @@
                 </tbody>
             </table>
         </div>
-<!-- 05 -->
-        <div class="shoping__cart__table tab-pane fade" id="eee">
+
+        <div class="shoping__cart__table tab-pane fade" id="fff">
 
             <table >
                 <thead>
                     <tr>
                         <th class="shoping__product">合約編號</th>
                         
-                        <th>合約對象<br>店家帳號</th>
-                        <th>最後時間</th>
-                        <th>版次</th>
-                        <th>合約狀態</th>
+                        <th>建立者</th>
+                        <th>建立時間</th>
+                        <th>版本</th>
+                        <th>狀態</th>
                         <th>詳細資訊</th>
                     </tr>
                 </thead>
@@ -477,10 +546,10 @@
                         </td>
                       
                         <td class="shoping__cart__price">
-                            合約到期
+                            <span style="color:orange;">審查失敗</span>
                         </td>
                         <td class="shoping__cart__status">
-                            <input type ="button" class="btn btn-primary" onclick="javascript:location.href='store_contract_accept.html'" value="詳細合約內容"></input>
+                            <input type ="button" class="btn btn-light" onclick="javascript:location.href='store_contract_accept.html'" value="內容"></input>
                         </td>
          
                     </tr>

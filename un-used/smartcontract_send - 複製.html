@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Ogani Template">
+    <meta name="keywords" content="Ogani, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ogani | Template</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;900&display=swap" rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+  
+    <style> 
+        textarea {
+          width: 100%;
+          height: 150px;
+          padding: 12px 20px;
+          box-sizing: border-box;
+          border: 2px solid #ccc;
+          border-radius: 4px;
+          background-color: #f8f8f8;
+          font-size: 16px;
+          resize: none;
+        }
+
+ 
+    </style>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script data-require="jquery@*" data-semver="3.0.0" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.js"></script>
+
+    <link data-require="bootstrap@*" data-semver="4.0.0-alpha.2" rel="stylesheet" href="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.css" />
+    <script data-require="bootstrap@*" data-semver="4.0.0-alpha.2" src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css" />
+</head>
+
+<body>
+
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+<!-- 比較寬的導覽列 -->
+<div class="container">
+    <div class="row">
+        <div class="col-lg-3">
+            <div class="header__logo" >
+                <a href="./index.html"><img src="img/logo.png" alt="" ></a>
+            </div>
+        </div>
+
+        <div class="col-lg-6">
+            <nav class="header__menu">
+                <ul>
+                    <div class="hero__search__form">
+                        <form action="#">
+                            <div class="">
+                                <select class="form-control"> 
+                                    <option>依商品名稱搜尋</option>
+                                    <option>依賣家名稱搜尋</option>
+                                </select>
+                            </div>
+                            <input type="text" placeholder="What do you need?">
+                            <button type="submit" class="site-btn" width="10%">SEARCH</button>
+                        </form>
+                    </div>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="col-lg-3">
+            <div class="header__cart">
+                <ul>
+                    <nav class="navbar  navbar-expand-sm" style="">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-list-3" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbar-list-3">
+                            <ul class="navbar-nav">
+                                <li><a href="shopping-cart.html"><i class="fa fa-shopping-bag"></i> <span>4</span></a></li>
+                                    <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fa fa-user-circle-o" style="font-size:20px;color:rgb(0, 0, 0)"></i>
+                                    </a>
+                                        <!-- 買家版本 -->
+                                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                            <a class="dropdown-item" href="seller_Personal-info.html"><i class="fa fa-user">&nbsp;</i> 個人資料</i></a>
+                                            <a class="dropdown-item" href="order_buyer.html"><i class="fa fa-search">&nbsp;</i>訂單查詢</a>
+                                            <a class="dropdown-item" href="store-overview.html"><i class="fa fa-list-ul">&nbsp;</i>賣場總覽</a>
+                                            <a class="dropdown-item" href="favorite-store、goods.html"><i class="fa fa-heart">&nbsp;</i>我的最愛</a>
+                                            <a class="dropdown-item" href="#"><i class="fa fa-toggle-on">&nbsp;</i>登出帳號</a>
+                                        </div>
+
+                                        <!-- 賣家版本 -->
+                                        <!-- <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                            <a class="dropdown-item" href="buyer_Personal-Info.html"><i class="fa fa-user"> &nbsp; </i>個人資料</a>
+                                            <a class="dropdown-item" href="smartcontract.html"><i class="fa fa-search">&nbsp;</i>智能合約</a>
+                                            <a class="dropdown-item" href="order_seller.html"><i class="fa fa-search">&nbsp;</i>訂單管理</a>
+                                            <a class="dropdown-item" href="store_Goods-management.html"><i class="fa fa-shopping-bag">&nbsp;</i>商品管理</a>
+                                            <a class="dropdown-item" href="#"><i class="fa fa-toggle-on">&nbsp;</i>登出帳號</a>
+                                        </div> -->
+                                    </div>
+                                </li>   
+                            </ul>
+                        </div>
+                    </nav>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 比較寬的導覽列END -->
+
+<!-- 中間詳細內容 -->
+<section class="checkout spad">
+
+    <div class="container">
+        <div class="checkout__form">
+            <h4>建立智能合約</h4>
+            <h5 class="m-0">
+                <a>選擇智能合約合作對象</a>
+            </h5>
+            <br>
+            <div class="div_test">
+                <input type="text" id="id" placeholder="請輸入賣家編號" style="text-align: center;">
+                <input type="text" id="name"  placeholder="請輸入商店名稱" style="text-align: center;">
+                <!-- <input type="number" id="gender"  placeholder="請輸入利潤比例分配"> -->
+                <input type="number" id="gender" placeholder="20％" style="text-align: center;">
+                <input type="button" value="添加" id="btn_add">
+            </div>
+            <br>
+            <form action="#">
+                <table class="tat_test,td_test">
+                    <!-- 表格标题
+                    <caption>合作商家資訊表單</caption> -->
+                    <!-- 表格第一行：表格表头 -->
+                    <tr class="tr_test">
+                        <th class="td_test">賣家編號</th>
+                        <th class="td_test">商店名稱</th>
+                        <th class="td_test">分配比例（％）</th>
+                        <th class="td_test">刪除動作</th>
+                    </tr>
+                
+                    <!-- 表格第二行：信息2 -->
+                    <tr>
+                        <td class="td_test">408402222</td>
+                        <td class="td_test">開開心心蔬果鋪</td>
+                        <td class="td_test" width="10px" >
+                            <input placeholder="20" type="number" value="请输入文本" style="text-align: center;margin-left: 17px;border-color:rgba(155, 155, 155, 0)"></td>
+                        <!-- 在该单元格中创建一个链接标签，void运算符来阻止href返回值，通过onclick事件(鼠标点击)属性来删除信息行-->
+                        <td class="td_test"><a style="/* border: 1px solid rgba(30, 59, 28, 0); */text-align: center;">這是您自己</a></td>
+                    </tr>
+                
+                    <!-- 表格第三行：信息2 -->
+                    <!-- <tr>
+                        <td class="td_test">408409999</td>
+                        <td class="td_test">我只賣超好吃的蔬菜</td>
+                        <td class="td_test" width="10px" >
+                            <input placeholder="20" type="number" value="请输入文本" style=" text-align: center;border-color:rgba(155, 155, 155, 0)">
+                        </td>                         -->
+                        <!-- 在该单元格中创建一个链接标签，void运算符来阻止href返回值，通过onclick事件(鼠标点击)属性来删除信息行-->
+                        <!-- <td class="td_test"><a href="javascript:void(0);" onclick="delTr(this);" style="/* border: 0px solid rgba(30, 59, 28, 0); */text-align: center;">刪除</a></td>
+                    </tr> -->
+
+                </table>
+            </form>
+
+            <br><br>
+            <h5 class="m-0">
+                <a>選擇智能合約商品內容</a>
+            </h5>
+            <br>
+            <table id="myDataTalbe"  class="display"  >
+                <thead>
+                    <!--必填-->
+        
+                    <tr>
+                        <th>勾選</th>
+                        <th>商品編號</th>
+                        <th>商品名稱</th>
+                        <th>商品價格</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <input type="checkbox">
+                        </td>
+                        <td>999000</td>
+                        <td>蘋果</td>
+                        <td>＄30</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox">
+                        </td>
+                        <td>90077</td>
+                        <td>香蕉</td>
+                        <td>＄66</td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox">
+                        </td>
+                        <td>55566</td>
+                        <td>櫻桃</td>
+                        <td>＄230</td>
+
+                    </tr>
+                </tbody>
+            </table>
+
+            <br><br>
+            <h5 class="m-0">
+                <a>其他合約內容</a>
+            </h5>
+            <br>
+            <textarea></textarea>
+        </div>
+        <br><br>
+        <button type="submit" class="site-btn">送出申請</button>
+        <button type="button" class="site-white-btn" onclick="history.back()">取消</button>
+       
+    </div>
+
+</section>
+<!-- 中間詳細內容END -->
+
+    <footer class="footer spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="footer__about">
+                        <div class="footer__about__logo">
+                            <a href="./index.html"><img src="img/logo.png" alt=""></a>
+                        </div>
+                        <ul>
+                            <li>Address: 60-49 Road 11378 New York</li>
+                            <li>Phone: +65 11.188.888</li>
+                            <li>Email: hello@colorlib.com</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 offset-lg-1">
+                    <div class="footer__widget">
+                        <h6>Useful Links</h6>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">About Our Shop</a></li>
+                            <li><a href="#">Secure Shopping</a></li>
+                            <li><a href="#">Delivery infomation</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Our Sitemap</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">Who We Are</a></li>
+                            <li><a href="#">Our Services</a></li>
+                            <li><a href="#">Projects</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Innovation</a></li>
+                            <li><a href="#">Testimonials</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <div class="footer__widget">
+                        <h6>Join Our Newsletter Now</h6>
+                        <p>Get E-mail updates about our latest shop and special offers.</p>
+                        <form action="#">
+                            <input type="text" placeholder="Enter your mail">
+                            <button type="submit" class="site-btn">Subscribe</button>
+                        </form>
+                        <div class="footer__widget__social">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-pinterest"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="footer__copyright">
+                        <div class="footer__copyright__text"><p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p></div>
+                        <div class="footer__copyright__payment"><img src="img/payment-item.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        // 1.获取按钮
+        var btn_add = document.getElementById("btn_add");
+        btn_add.onclick = function() {
+            // 2.1 获取文本框对象
+            var idObject = document.getElementById("id");
+            var nameObject = document.getElementById("name");
+            var genderObject = document.getElementById("gender");
+            // 2.2 获取文本框的内容
+            var id = idObject.value;
+            var name = nameObject.value;
+            var gender = genderObject.value;
+     
+            //3.创建单元格，赋值单元格的标签体
+            // id 的 单元格
+            var td_id = document.createElement("td");              // 创建单元格
+                td_id.style="text-align: center;border: 1px solid;border-color :#8a8a8a2c;text-align:center;";
+            var text_id = document.createTextNode(id);             // 赋值给单元格的标签体
+                text_id.style="text-align: center;border: 1px solid;border-color :#8a8a8a2c;text-align:center;";
+            td_id.appendChild(text_id);
+            // name 的 单元格
+            var td_name = document.createElement("td");
+                td_name.style="text-align: center;border: 1px solid;border-color :#8a8a8a2c;text-align:center;";
+            var text_name = document.createTextNode(name);
+                text_name.style="text-align: center;border: 1px solid;border-color :#8a8a8a2c;text-align:center;";
+            td_name.appendChild(text_name);
+            //gender 的 单元格
+            var td_gender = document.createElement("td");
+                td_gender.style="text-align: center;border: 1px solid;border-color :#8a8a8a2c;text-align:center;";
+            var text_gender = document.createTextNode(gender);
+                text_gender.style="text-align: center;border: 1px solid;border-color :#8a8a8a2c;text-align:center;";
+            td_gender.appendChild(text_gender);
+            
+            // a标签的单元格
+            var td_a = document.createElement("td");
+                td_a.style="text-align: center;text-align:center;";
+            var ele_a = document.createElement("a");
+                ele_a.style="text-align: center;text-align:center;";
+            ele_a.setAttribute("href","javascript:void(0);","delTr(this);");
+            ele_a.setAttribute("onclick","delTr(this);");
+            var text_a = document.createTextNode("刪除");
+                text_a.style="text-align: center;text-align:center;";
+            ele_a.appendChild(text_a);                         // 为a标签写入文本内容："删除"
+            td_a.appendChild(ele_a);                           // 为td标签添加子标签（a标签）
+     
+            // 4.创建表格行
+            var tr = document.createElement("tr");
+                tr.style="text-align: center;border: 1px solid;border-color :#8a8a8a2c;text-align:center;";
+            // 5.添加单元格到表格行中
+            tr.appendChild(td_id);
+            tr.appendChild(td_name);
+            tr.appendChild(td_gender);
+            tr.appendChild(td_a);
+            // 6.获取table
+            var table = document.getElementsByTagName("table")[0];
+            table.appendChild(tr);
+        };
+     
+        // 删除方法
+        function deleteTr(object) {
+            // 获取table节点
+            var table = object.parentNode.parentNode.parentNode;
+            // 获取te节点
+            var tr = object.parentNode.parentNode;
+            // 删除（并返回）当前节点的指定子节点。
+            table.removeChild(tr);
+        }
+
+    </script>
+    <!--引用jQuery-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <!--引用dataTables.js-->
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+        
+    <script type="text/javascript">
+        $(function () {
+
+            $("#myDataTalbe").DataTable({
+                searching: true, //filter功能
+                columnDefs: [{
+                    targets: [3],
+                    orderable: false,
+                    bPaginate:true, //右下角翻頁功能
+                    
+                }]
+            });
+        });
+    </script>
+</body>
+</html>
