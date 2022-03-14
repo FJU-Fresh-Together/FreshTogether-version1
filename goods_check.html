@@ -1,0 +1,562 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Ogani Template">
+    <meta name="keywords" content="Ogani, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FJU|生鮮蔬果一起來</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;900&display=swap" rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style-cart.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+   
+
+
+    <link rel="stylesheet" href="css/for_shopping_cart/bootstrap.min.css">
+    <link rel="stylesheet" href="css/shop1.css" type="text/css">
+    <style> 
+        textarea {
+          width: 100%;
+          height: 150px;
+          padding: 12px 20px;
+          box-sizing: border-box;
+          border: 2px solid #ccc;
+          border-radius: 4px;
+          background-color: #f8f8f8;
+          font-size: 16px;
+          resize: none;
+        }
+
+ 
+    </style>
+    
+   
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script><script  src="js/script.js"></script>
+
+    
+
+</head>
+<body>
+
+    <!-- Header Section Begin -->
+    <header class="header">
+
+        <!-- 導覽列 -->
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-3">
+                    <div class="header__logo" style="text-align: center;">
+                        <!-- style="text-align: right;" -->
+                        <a href="./index.html"><img src="img/logo.png" style="max-width:60%" ></a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6">
+                    <nav class="header__menu">
+                        <ul>
+                            <div class="hero__search__form">
+                                <form action="#">
+                                    <div class="">
+                                        <select class="form-control"> 
+                                            <option>依商品名稱搜尋</option>
+                                            <option>依賣家名稱搜尋</option>
+                                        </select>
+                                        <!-- <span class="arrow_carrot-down"></span> -->
+                                    </div>
+                                    <input type="text" placeholder="What do you need?">
+                                    <button type="submit" class="site-btn" width="10%">SEARCH</button>
+                                </form>
+                            </div>
+                        </ul>
+                    </nav>
+                </div>
+                
+                <div class="col-lg-3">
+                    <div class="header__cart">
+                        <ul>
+                            <nav class="navbar  navbar-expand-sm" style="">
+                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-list-3" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                  <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <div class="collapse navbar-collapse" id="navbar-list-3">
+                                    <ul class="navbar-nav">
+                                    
+                                        <!-- 右上角購物車小圖示 -->
+                                        <!-- <div style="float: right; cursor: pointer;"> -->
+                                        <li><a href="shoping-cart.html"><i class="fa fa-shopping-bag"></i> <span>4</span></a></li>
+
+
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <i class="fa fa-user-circle-o" style="font-size:20px;color:rgb(0, 0, 0)"></i>
+                                            </a>
+
+                                            <!-- 買家版本 -->
+                                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                                <a class="dropdown-item" href="#"><i class="fa fa-user">&nbsp;</i> 個人資料</i></a>
+                                                <a class="dropdown-item" href="#"><i class="fa fa-search">&nbsp;</i>訂單查詢</a>
+                                                <a class="dropdown-item" href="#"><i class="fa fa-search">&nbsp;</i>智能合約</a>
+
+                                                <a class="dropdown-item" href="#"><i class="fa fa-heart">&nbsp;</i>我的最愛</a>
+
+                                                <a class="dropdown-item" href="#"><i class="fa fa-toggle-on">&nbsp;</i>登出帳號</a>
+                                            </div>
+
+                                            <!-- 賣家版本 -->
+                                            <!-- <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                                <a class="dropdown-item" href="#"><i class="fa fa-user"> &nbsp; </i>個人資料</a>
+                                                <a class="dropdown-item" href="#"><i class="fa fa-list-ul">&nbsp;</i>賣場介紹</a>
+                                                <a class="dropdown-item" href="#"><i class="fa fa-shopping-bag">&nbsp;</i>商品管理</a>
+                                                <a class="dropdown-item" href="#"><i class="fa fa-toggle-on">&nbsp;</i>登出帳號</a>
+                                                
+                                            </div> -->
+                                        </li>   
+                                    </ul>
+                                </div>
+                            </nav>
+          
+                        </ul>
+                        <!-- <div class="header__cart__price">item: <span>$150.00</span></div> -->
+                    </div>
+                
+                </div>
+            </div>
+ 
+        </div>
+        <!-- 導覽列END -->
+    </header>
+
+   
+
+    <section class="shoping-cart spad">
+    <div class="container">
+        <div class="checkout__form">
+            <h4>賣場商品審核</h4>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+    <div><h5><b>賣場編號:&nbsp;&nbsp;&nbsp;&nbsp;47859652</b></h5><br><br></div>
+    <div><h5><b>賣場名稱:&nbsp;&nbsp;&nbsp;&nbsp;開開心心生鮮鋪</b></h5><br><br></div>
+    <div class="checkAllWrap">
+        <div class="shoping__cart__table">
+            <table id="table">
+                <thead>
+                    <tr>
+                        <!-- <div class="basket-labels"> -->
+                        <div>
+                            <th class="shoping__product">Products</th>
+                                                                 
+                            <th>Price</th>
+                            <th>Quantity</th>
+                            <th>Total</th>
+                            <th>Pass</th>  
+                            <th></th>
+                        </div>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="cart_item">
+
+                        <td class="shoping__cart__item cart_price">
+                            <img src="img/cart/cart-1.jpg" alt="">
+                            <h5>Vegetable’s Package</h5>
+                        </td>
+
+                        <td class="shoping__cart__price cart_price">
+                            <div class="justify-content-end price_money">$<span class="product-quantity actual_price">15</span></div>                                       
+                        </td>
+                        <td class="shoping__cart__price cart_price">
+                            <div class="justify-content-end price_money">200</div>                                       
+                        </td>
+
+                        <td class="shoping__cart__price cart_price">
+                            <div class="justify-content-end price_money">$<span class="product-quantity actual_price">3000</span></div>                                       
+                        </td>
+                        <td class="shoping__cart__total cart_total">
+                            <div class="form-check">
+                                <div lass="formGroup">
+                                    <input type="checkbox" name="sort" value="小鮮肉" style="margin-left:33%;position:relative" checked>
+                                   
+                                  </div>
+                                
+                               
+                                  
+                                </label>
+                              </div>
+                        </td>
+
+                  
+                    </tr>
+                    <tr class="cart_item">
+ 
+                        <td class="shoping__cart__item cart_price">
+                            <img src="img/cart/cart-2.jpg" alt="">
+                            <h5>Fresh Garden Vegetable</h5>
+                        </td>
+
+                        <td class="shoping__cart__price cart_price">
+                            <div class="justify-content-end price_money">$<span class="product-quantity actual_price">15</span></div>                                       
+                        </td>
+                        <td class="shoping__cart__price cart_price">
+                            <div class="justify-content-end price_money">100</div>                                       
+                        </td>
+
+                        <td class="shoping__cart__price cart_price">
+                            <div class="justify-content-end price_money">$<span class="product-quantity actual_price">1500</span></div>                                       
+                        </td>
+                        <td class="shoping__cart__total cart_total">
+                            <div class="form-check">
+                                <div lass="formGroup">
+                                    <input type="checkbox" name="sort" value="大叔" style="margin-left:33%;position:relative" checked>
+                                  </div>
+                                
+                                
+                               
+                                  
+                                </label>
+                              </div>
+                        </td>
+
+                     
+                      
+
+                         
+                    </tr>
+                    <tr class="cart_item">
+
+                        <td class="shoping__cart__item cart_price">
+                            <img src="img/cart/cart-3.jpg" alt="">
+                            <h5>Organic Bananas</h5>
+                        </td>
+
+                        <td class="shoping__cart__price cart_price">
+                            <div class="justify-content-end price_money">$<span class="product-quantity actual_price">20</span></div>                                       
+                        </td>
+                        <td class="shoping__cart__price cart_price">
+                            <!-- <div class="quantity">
+                                <div class="pro-qty quantity-field">
+                                    <input type="text" value="1">
+                                </div>
+                            </div> -->
+                            
+                                <ul class="pagination justify-content-end set_quantity">
+                                  
+                              
+                                
+                                </ul>
+
+                                <div class="justify-content-end price_money">500</div>
+                               
+                            
+                        </td>
+                        <td class="shoping__cart__price cart_price">
+                            <div class="justify-content-end price_money">$<span class="product-quantity actual_price">10000</span></div>                                       
+                        </td>
+
+         
+                        <td class="shoping__cart__total cart_total">
+                            <div class="form-check">
+                                <div lass="formGroup">
+                                    <input type="checkbox" name="sort" value="宅男" style="margin-left:33%;position:relative" checked>
+                                  </div>
+                                
+                               
+                                  
+                                </label>
+                              </div>
+                        </td>
+                 
+                            
+                           
+                       
+                    </tr>
+     
+    
+      
+   
+ 
+
+      </tbody>
+      </table>
+    
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="checkout3__input">
+                <p></p>
+            </div>
+               
+                <div class="formGroup">
+                    <input type="checkbox" class="checkAll" checked />
+                    <label><h6 style="padding-left:20px;">通過/未通過全部商品</h6></label>
+                  </div>
+                  </div>
+                </div>
+                
+                <br>
+                <br>
+            <div class="checkout3__input">
+                <p>通過/未通過原因說明</p>
+                <textarea id="story" name="story" 
+                 ></textarea>
+            </div>
+            <div>
+                <a href="#" class="site-btn">傳送審核訊息</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </div>
+   
+    
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<footer class="footer spad">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="footer__about">
+                    <div class="footer__about__logo">
+                        <a href="./index.html"><img src="img/logo.png" alt=""></a>
+                    </div>
+                    <ul>
+                        <li>Address: 60-49 Road 11378 New York</li>
+                        <li>Phone: +65 11.188.888</li>
+                        <li>Email: hello@colorlib.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6 offset-lg-1">
+                <div class="footer__widget">
+                    <h6>Useful Links</h6>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">About Our Shop</a></li>
+                        <li><a href="#">Secure Shopping</a></li>
+                        <li><a href="#">Delivery infomation</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Our Sitemap</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">Who We Are</a></li>
+                        <li><a href="#">Our Services</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Innovation</a></li>
+                        <li><a href="#">Testimonials</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-12">
+                <div class="footer__widget">
+                    <h6>Join Our Newsletter Now</h6>
+                    <p>Get E-mail updates about our latest shop and special offers.</p>
+                    <form action="#">
+                        <input type="text" placeholder="Enter your mail">
+                        <button type="submit" class="site-btn">Subscribe</button>
+                    </form>
+                    <div class="footer__widget__social">
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="footer__copyright">
+                    <div class="footer__copyright__text"><p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p></div>
+                    <div class="footer__copyright__payment"><img src="img/payment-item.png" alt=""></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+
+<script>
+    $(function () {
+  $(".checkAll").click(function () {
+    var isCheck = $(this).prop("checked");
+    $(this).closest(".checkAllWrap").find("input[name='sort']").prop("checked", isCheck);
+  });
+  
+  $(".checkAllWrap input[name='sort']").click(function () {
+    
+  var el_checkAll = $(this).closest(".checkAllWrap").find(".checkAll");
+    
+  var checkLength = $(this).closest(".checkAllWrap").find("input[name='sort']:checked").length;// 每區塊目前被V的有幾個
+    
+  var inputLength =
+    $(this).closest(".checkAllWrap").find("input[name='sort']").length; // 每區塊的核取框有多少
+    
+  
+    if (!$(this).prop("checked")) {
+      el_checkAll.prop("checked", false);
+    } else {
+      if (checkLength == inputLength) {
+          el_checkAll.prop("checked", true);
+      }
+    }
+  });
+ 
+});
+</script>
+
+<script src="js/jquery-3.3.1.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/jquery.nice-select.min.js"></script>
+      <script src="js/jquery-ui.min.js"></script>
+      <script src="js/jquery.slicknav.js"></script>
+      <script src="js/mixitup.min.js"></script>
+      <script src="js/owl.carousel.min.js"></script>
+      <script src="js/main.js"></script>
+  
+      <script src="js/for_shopping_cart/jquery-2.2.3.min.js"></script>
+      <script type='text/javascript'src="js/for_shopping_cart/bootstrap.min.js"></script>
+      <script type='text/javascript' src="js/for_shopping_cart/jquery.mycart.js"></script>
+      <script type='text/javascript'>
+    
+          var product_total_amt  = document.getElementById('product_total_amt');
+          const decreaseNumber=(incdec,itemprice) =>{
+              var itemval = document.getElementById(incdec);
+              var itemprice = document.getElementById(itemprice);
+              console.log(itemprice.innerHTML);
+              console.log(itemval.innerHTML);
+       
+            if (itemval.value<=0){
+                item.value=0;
+                alert("不允許負數");
+
+            }else{
+                itemval.value = parseInt(itemval.value) - 1;
+                
+                itemprice.innerHTML = parseInt(itemprice.innerHTML)-15;
+                product_total_amt.innerHTML = parseInt(product_total_amt.innerHTML)-15;
+                
+               
+
+            }
+          }
+
+          const increaseNumber=(incdec,itemprice) =>{
+              var itemval = document.getElementById(incdec);
+              var itemprice = document.getElementById(itemprice);
+              console.log(itemprice.innerHTML);
+            //   console.log(itemval);
+            if (itemval.value>=20){
+                itemval.value = 20;
+                alert("購物車中單項商品最多允許購買20個");
+               
+            }else{
+                itemval.value = parseInt(itemval.value) + 1;
+                itemprice.innerHTML = parseInt(itemprice.innerHTML)+15;
+                itemval.value.innerHTML = parseInt(itemval.value);
+                product_total_amt.innerHTML = parseInt(product_total_amt.innerHTML)+15;
+                // *parseInt(itemval.value.innerHTML)
+            }
+          }
+ 
+
+          $(function() {
+    $('.quantityplus').click(function(e){
+        e.preventDefault();
+        fieldName = $(this).attr('field');
+
+        //Fetch qty in the current elements context and since you have used class selector use it.
+        var qty = $(this).closest('.cart_item').find('.quantity');
+        //var qty = $(this).closest('tr').find('input[name='+fieldName+']');
+
+        var currentVal = parseInt(qty.val());
+        if (!isNaN(currentVal)) {
+            qty.val(currentVal + 1);
+        } else {
+            qty.val(0);
+        }
+
+        //Trigger change event
+        qty.trigger('change');
+    });
+
+    $(".quantityminus").click(function(e) {
+        e.preventDefault();
+        fieldName = $(this).attr('field');
+
+        //Fetch qty in the current elements context and since you have used class selector use it.
+        var qty = $(this).closest('.cart_item').find('.quantity');
+        //var qty = $(this).closest('tr').find('input[name='+fieldName+']');
+
+        var currentVal = parseInt(qty.val());
+        if (!isNaN(currentVal) && currentVal > 0) {
+            qty.val(currentVal - 1);
+        } else {
+            qty.val(0);
+        }
+
+        //Trigger change event
+        qty.trigger('change');
+    });     
+
+    //Bind the change event
+    $(".quantity").change(function() {
+        var sum = 0;
+        var total = 0;
+        $('.actual_price').each(function () {
+            var price = $(this);
+            var count = price.closest('.cart_item').find('.quantity');
+            sum = (price.html() * count.val());
+            total = total + sum;
+            price.closest('.cart_item').find('.item_price').html(sum);
+        });
+        $('.total_price').html("<h5>$" + total + "</h5>");
+
+    }).change(); //trigger change event on page load
+});
+
+function deleteRow(obj){
+    var index=obj.parentNode.rowIndex;
+    var table = document.getElementById("table");
+    table.deleteRow(index);
+}
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+ 
+      </script>
+  
+  
+</body>
+
+
+</html>
