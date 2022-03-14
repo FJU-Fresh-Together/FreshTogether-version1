@@ -3694,7 +3694,7 @@ ol {
 /* 下面是星星評價功能的the 抄 */
 .star-container {
 	display: flex;
-	width: 350px;
+	/* width: 350px; */
 	flex-direction: row-reverse;
   }
   
@@ -3743,9 +3743,12 @@ ol {
 
   /* Border Color / Style */
 .ta3 {
-	width:230px;
-	height:60px;
+	/* width:230px; */
+	width:90%;
+	height:80px;
 	border:2px dashed #D1C7AC;
+	align-content: center;
+	margin-right: 3px;
 }
 
 
