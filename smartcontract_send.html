@@ -7,6 +7,8 @@
     <meta name="keywords" content="Ogani, unica, creative, html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=big5">
+
     <title>Ogani | Template</title>
 
     <!-- Google Font -->
@@ -48,7 +50,7 @@
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css" />
 </head>
 
-<body onload="ShowTime()">
+<body onload="ShowTime()" ng-app="">
 
     <div id="preloder">
         <div class="loader"></div>
@@ -165,21 +167,56 @@
                         <td class="td_test"><a style="/* border: 1px solid rgba(30, 59, 28, 0); */text-align: center;">這是您自己</a></td>
                     </tr>
                 
-                    <!-- 表格第三行：信息2 -->
-                    <!-- <tr>
-                        <td class="td_test">408409999</td>
-                        <td class="td_test">我只賣超好吃的蔬菜</td>
-                        <td class="td_test" width="10px" >
-                            <input placeholder="20" type="number" value="请输入文本" style=" text-align: center;border-color:rgba(155, 155, 155, 0)">
-                        </td>                         -->
-                        <!-- 在该单元格中创建一个链接标签，void运算符来阻止href返回值，通过onclick事件(鼠标点击)属性来删除信息行-->
-                        <!-- <td class="td_test"><a href="javascript:void(0);" onclick="delTr(this);" style="/* border: 0px solid rgba(30, 59, 28, 0); */text-align: center;">刪除</a></td>
-                    </tr> -->
 
                 </table>
             </form>
 
             <br><br>
+            <h5 class="m-0">
+                <a>設定智能合約的有效年限</a>
+            </h5>
+            <br>
+            <!-- 雙層選單 -->
+
+            <div ng-controller="zip">
+            <select ng-model="SelCity" ng-options="City.name for City in Citys" ng-change="update(SelCity)">
+                <option value="">--請選擇--</option>
+            </select>
+                    
+                <select ng-model="SelArea" ng-options="SelCity for  SelCity in level2" >
+                <option value="">--請選擇--</option>
+            </select>
+            </div>
+            <!-- 雙層選單END -->
+            <!-- 雙層選單的SCRIPT -->
+            <script>
+                function zip ($scope)
+                {
+                $scope.Citys=
+                    [
+                    {
+                        name:"台北市",
+                        areas:["中正區100", "大同區103", "中山區104", "松山區105", "大安區106", "萬華區108", "信義區110", "士林區111", "北投區112", "內湖區114", "南港區115", "文山區116"]
+                    },
+                    {
+                        name:"新北市",
+                        areas: ["萬里鄉207", "金山鄉208", "板橋市220", "汐止市221", "深坑鄉222", "石碇鄉223", "瑞芳鎮224", "平溪鄉226", "雙溪鄉227", "貢寮鄉228", "新店市231", "坪林鄉232", "烏來鄉233", "永和市234", "中和市235", "土城市236", "三峽鎮237", "樹林市238", "鶯歌鎮239", "三重市241", "新莊市242", "泰山鄉243", "林口鄉244", "蘆洲市247", "五股鄉248", "八里鄉249", "淡水鎮251", "三芝鄉252", "石門鄉253"]
+                    },
+                    {
+                    name:"基隆市",
+                    areas:["仁愛區200", "信義區201", "中正區202", "中山區203", "安樂區204", "暖暖區205", "七堵區206"]
+                    }
+                    ];
+                
+                $scope.update = function (selectedValue) {
+                    $scope.level2 = selectedValue.areas;
+                    };
+                
+                }
+            </script>
+            <!-- 雙層選單的SCRIPT END -->
+
+            <br><br><br><br>
             <h5 class="m-0">
                 <a>選擇智能合約商品內容</a>
             </h5>
@@ -410,5 +447,7 @@
             });
         });
     </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+
 </body>
 </html>
